@@ -144,6 +144,42 @@
       opacity:1;
       color:white;
     }
+    .shortcuts{
+      display:grid;
+      grid-template-columns:160px 160px;
+      grid-column-gap:50px;
+      padding:20px 0;
+    }
+    .shortcuts>a>div{
+      display:grid;
+      grid-template-columns:auto 30px;
+      padding:10px 0;
+      border-bottom:1px solid green;
+    }
+    .short_txt{
+      font-size:14px;
+      color:green;
+    }
+    .short_arrow{
+      background:green;
+      color:white;
+      height:30px;
+      border-radius:50%;
+      text-align:center;
+      line-height:30px;
+    }
+    .papers{
+      display:grid;
+      grid-template-columns:auto auto auto auto;
+      grid-column-gap:20px;
+    }
+    .papers_tit{
+      display:grid;
+      grid-template-columns: auto auto;
+      justify-content: space-between;
+    }
+    
+    
 
   </style>
 </head>
@@ -218,6 +254,78 @@
           </div>
           <!-- If we need pagination -->
           <div class="swiper-pagination"></div>
+        </div>
+      </article>
+      <article class="article shortcuts">
+        <a href="#">
+          <div>
+            <p class="short_txt">한솔제지 페이지몰<br>바로가기</p>
+            <p class="short_arrow">></p>
+          </div>
+        </a>
+        <a href="#">
+          <div>
+            <p class="short_txt">한솔제지 인스퍼<br>바로가기</p>
+            <p class="short_arrow">></p>
+          </div>
+        </a>
+      </article>
+      <article class="article papers">
+        <div>
+          <div class="papers_tit">
+            <h3>인쇄용지</h3>
+            <p>바로가기 ></p>
+          </div>
+          <div class="papers_img">
+            <img src="images/photo2_1.gif" alt="img01">
+          </div>
+          <div class="papers_txt">
+            <p>
+              인쇄작업성 및 품질균일성 등 최고급 한솔 인쇄용지를 확인하실 수 있습니다.
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="papers_tit">
+            <h3>인쇄용지</h3>
+            <p>바로가기 ></p>
+          </div>
+          <div class="papers_img">
+            <img src="images/photo2_2.gif" alt="img01">
+          </div>
+          <div class="papers_txt">
+            <p>
+              인쇄작업성 및 품질균일성 등 최고급 한솔 인쇄용지를 확인하실 수 있습니다.
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="papers_tit">
+            <h3>인쇄용지</h3>
+            <p>바로가기 ></p>
+          </div>
+          <div class="papers_img">
+            <img src="images/photo2_3.gif" alt="img01">
+          </div>
+          <div class="papers_txt">
+            <p>
+              인쇄작업성 및 품질균일성 등 최고급 한솔 인쇄용지를 확인하실 수 있습니다.
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="papers_tit">
+            <h3>인쇄용지</h3>
+            <p>바로가기 ></p>
+          </div>
+          <div class="papers_img">
+            <img src="images/photo2_4.gif" alt="img01">
+          </div>
+          <div class="papers_txt">
+            <p>
+              인쇄작업성 및 품질균일성 등 최고급 한솔 인쇄용지를 확인하실 수 있습니다.
+            </p>
+          </div>
         </div>
       </article>
     </section>
