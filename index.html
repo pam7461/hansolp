@@ -13,6 +13,7 @@
     })
   </script>
   <style>
+    a{color:#333;text-decoration:none;}
     .wrap{
       box-sizing:border-box;
       width:1200px;
@@ -22,9 +23,12 @@
     }
     .header{
       background:white;
-      display:grid;
-      grid-template-columns:200px 800px;
       justify-content:space-between;
+    }
+        
+    .header,.logo_top,.nav_top,.nav_top>ul,.nav_bottom>ul{
+      display:flex;
+      flex-flow:row nowrap;
     }
 
   </style>
