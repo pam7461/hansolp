@@ -6,14 +6,17 @@
   <title>한솔제지</title>
   <script src="js/jquery.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/fontawesome.min.js" integrity="sha256-NP9NujdEzS5m4ZxvNqkcbxyHB0dTRy9hG13RwTVBGwo=" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/normalize.css">
+  
   <script>
     $(function(){
 
     })
   </script>
   <style>
+    *{margin:0;border:none;padding:0;}
     a{color:#333;text-decoration:none;}
+    ul,ol,li{list-style:none;}
+
     .wrap{
       box-sizing:border-box;
       width:1200px;
@@ -26,9 +29,31 @@
       justify-content:space-between;
     }
         
-    .header,.logo_top,.nav_top,.nav_top>ul,.nav_bottom>ul{
+    .header,.logo_top,.nav_top,
+    .nav_top>ul,.nav_bottom>ul{
       display:flex;
       flex-flow:row nowrap;
+    }
+
+    .logo_point{
+      width:8px;
+      padding:11px 6px 0 0;
+    }
+    .logo_point>.point{
+      height:8px;
+      text-indent:-9999px;
+    }
+    .logo_point>.point.blue_point{
+      background:blue;
+    }
+    .logo_point>.point.green_point{
+      background:green;
+    }
+    .logo_bottom{
+      margin-top:-6px;
+      font-size:14px;
+      color:#999;
+      text-align:right;
     }
 
   </style>
@@ -37,7 +62,7 @@
   <div class="wrap">
     <header class="header">
       <h1 class="logo">
-        <a href="#">
+        <a href="index.html">
           <div class="logo_top">
             <div class="logo_point">
               <div class="point blue_point">파란점</div>
