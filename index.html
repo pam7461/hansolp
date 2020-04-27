@@ -15,25 +15,22 @@
     $(function(){
       var mySwiper = new Swiper ('.swiper-container', {
         // Optional parameters
-        direction: 'vertical',
         loop: true,
-
+        effect:'fade',
+        speed:1000,
         // If we need pagination
         pagination: {
           el: '.swiper-pagination',
+          type:'bullets',
         },
-
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-
-        // And if we need scrollbar
-        scrollbar: {
-          el: '.swiper-scrollbar',
+        autoplay:{
+          delay:3000,
         },
       })
+    
+      $('.swiper-pagination').children().eq(0).text('01');
+      $('.swiper-pagination').children().eq(1).text('02');
+      $('.swiper-pagination').children().eq(2).text('03');
     })
   </script>
   <style>
@@ -114,6 +111,39 @@
     .nav_bottom>ul>li>a:hover{
       text-decoration:underline;
     }
+    .section{
+      padding:20px 0;
+    }
+    .swiper-container{
+      padding-bottom:20px;
+    }
+    .swiper-pagination{
+      display:flex;
+    }
+    .swiper-pagination>span{
+      width:33.33333333333333%;
+      border-radius:0;
+      height:auto;
+      border-right:1px solid #ddd;
+      border-bottom:1px solid #ddd;
+      padding:4px 0;
+      font-size:12px;
+    }
+    .swiper-pagination>span:last-child{
+      border-right:none;
+    }
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+      margin:0;
+    }
+    .swiper-pagination-bullet{
+      background:white;
+      opacity:1;
+    }
+    .swiper-pagination-bullet-active{
+      background:blue;
+      opacity:1;
+      color:white;
+    }
 
   </style>
 </head>
@@ -176,20 +206,18 @@
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide">Slide 1</div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
-              ...
+              <div class="swiper-slide">
+                <img src="images/rollvisual01.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/rollvisual02.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/rollvisual03.jpg" alt="">
+              </div>
           </div>
           <!-- If we need pagination -->
           <div class="swiper-pagination"></div>
-
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-
-          <!-- If we need scrollbar -->
-          <div class="swiper-scrollbar"></div>
         </div>
       </article>
     </section>
